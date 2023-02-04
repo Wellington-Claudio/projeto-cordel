@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'carter';
+    src: url('../fontes/CarterOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'dancing';
+    src: url('../fontes/DancingScript-VariableFont_wght.ttf');
+}
+:root{
+    --font1: Verdana, tahoma ,sans-serif;
+    --font2: 'carter', sans-serif;
+    --font3: 'dancing', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+
+:root{
+    
+}
+
+html, body {
+    font-family: var(--font1);
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+header{
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font2);
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header p {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh ;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(26, 24, 24);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding:  5px;
+    background-color: rgba(0, 0, 0, 0.849);
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
